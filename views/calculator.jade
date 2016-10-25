@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h3.
+		Calculator
+	form#form_transaction(name="transaction",method="post",action="/getanswer")
+		span First Number
+		span &nbsp;
+		input#input_fnum(type="text", placeholder="2", name="fnum")
+		br
+		br
+		span Operator
+		span &nbsp;
+		input#input_op(type="text", placeholder="+,-,*,/", name="op")
+		br
+		br
+		span Second Number
+		span &nbsp;
+		input#input_snum(type="text", placeholder="5", name="snum")
+		br
+		button#submit_input(type="submit") Submit
+		

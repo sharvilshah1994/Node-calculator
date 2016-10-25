@@ -1,0 +1,9 @@
+extends layout
+
+block content
+ h3.
+  Transactions
+ ul
+  each input1, i in transactionlist
+   li#transaction_list_item
+    #{input1.input} yields answer #{input1.answer}
